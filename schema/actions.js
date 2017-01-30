@@ -30,8 +30,8 @@ function returnDATA() {
 
 }
 
-const TODOs = {
-  "actionId1": {
+const TODOs = [
+  {
     "chanId": "facebook",
     "descr": "Lorem ipsum",
     "howToIds": [
@@ -48,7 +48,7 @@ const TODOs = {
     ],
     "url": "page-post-photo"
   },
-  "actionId2": {
+  {
     "chanId": "twitter",
     "descr": "Lorem ipsum tweet tweet",
     "howToIds": [
@@ -63,7 +63,7 @@ const TODOs = {
     ],
     "url": "tweet"
   },
-  "actionId3": {
+  {
     "chanId": "facebook",
     "descr": "Lorem ipsum",
     "howToIds": [
@@ -78,16 +78,7 @@ const TODOs = {
     ],
     "url": "upload-video"
   }
-};
-
-/*returnDATA().then(function(returnedData) {
-
-
-  fs.writeFile('schema.js', schema, function(result) {
-    console.dir(result);
-  });
-
-});*/
+];
 
 const ActionsType = new graphql.GraphQLObjectType({
   name: 'actions',
@@ -118,7 +109,7 @@ const queryType = new graphql.GraphQLObjectType({
     return {
       actions: {
         type: new graphql.GraphQLList(ActionsType),
-        resolve: function () {
+        resolve: function() {
           return TODOs;
         }
       }

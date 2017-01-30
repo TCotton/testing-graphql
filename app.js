@@ -32,7 +32,7 @@ app.use('/users', users);
 const query = 'query { actions { chanId } }';
 
 graphql(actionsSchema, query).then(function(result) {
-  console.dir(result);
+  console.dir(JSON.stringify(result));
 });
 
 app.use('/actions', graphQLHTTP({
