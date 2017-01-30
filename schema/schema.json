@@ -1,0 +1,49 @@
+{
+  "actionId1": {
+    "chanId": "facebook",
+    "descr": "Lorem ipsum",
+    "howToIds": [
+      null,
+      "howToId1",
+      "howToId3"
+    ],
+    "imgUrl": "http://placehold.it/300x300?text=ActionScreenshot",
+    "name": "Page Post Photo",
+    "reqIds": [
+      null,
+      "reqId1",
+      "reqId4"
+    ],
+    "url": "page-post-photo"
+  },
+  "actionId2": {
+    "chanId": "twitter",
+    "descr": "Lorem ipsum tweet tweet",
+    "howToIds": [
+      null,
+      "howToId2"
+    ],
+    "imgUrl": "http://placehold.it/300x300?text=ActionScreenshot",
+    "name": "Tweet",
+    "reqIds": [
+      null,
+      "reqId2"
+    ],
+    "url": "tweet"
+  },
+  "actionId3": {
+    "chanId": "facebook",
+    "descr": "Lorem ipsum",
+    "howToIds": [
+      null,
+      "howToId4"
+    ],
+    "imgUrl": "http://placehold.it/300x300?text=ActionScreenshot",
+    "name": "Upload Video",
+    "reqIds": [
+      null,
+      "reqId3"
+    ],
+    "url": "upload-video"
+  }
+}
